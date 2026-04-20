@@ -1,20 +1,25 @@
-# International Student Support Website 🇯🇵
+# 🇯🇵 International Student Support Website
 
-## Overview
-A website designed to help international students in Japan with housing, job search, translation, and daily life support.
+## 📌 Overview
+A web platform designed to help international students in Japan with housing, job search, translation, and daily life support.
 
-## Features
-- Clean modern UI
-- Affordable pricing (¥990 – ¥2980)
-- Monthly support option
-- LINE contact integration
+## 🚀 Features
+- 🏠 Housing assistance (apartment search, landlord contact)
+- 💼 Job support (resume help, job search guidance)
+- 🌐 Translation services (Japanese ↔ English / Arabic)
+- 📱 Easy contact via LINE
+- 💰 Affordable pricing (¥990 – ¥2990, monthly ¥4980)
 
-## Tech Stack
+## 🛠 Tech Stack
 - HTML
 - Tailwind CSS
 
-## Live Demo
-https://yourusername.github.io/international-student-support
+## 🌍 Live Demo
+👉 https://mohamedghazy01.github.io/international-student-support/
 
-## Screenshots
-(Add screenshots here)
+## 📸 Screenshots
+
+
+## 🎯 Purpose
+This project was built to solve real problems faced by foreigners living in Japan, making it easier to adapt and succeed.
+
