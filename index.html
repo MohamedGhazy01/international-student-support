@@ -35,64 +35,214 @@
       }
     };
   </script>
+  <style>
+    @media (max-width: 640px) {
+      .top-banner {
+        border-radius: 1.4rem;
+      }
+
+      .top-banner-inner {
+        padding: 0.875rem 1rem;
+      }
+
+      .top-banner-logo {
+        height: 2.8rem;
+      }
+
+      .hero-shell {
+        border-radius: 1.6rem;
+      }
+
+      .hero-grid {
+        min-height: auto;
+        gap: 1.5rem;
+        padding: 1.25rem;
+      }
+
+      .hero-chip {
+        font-size: 0.72rem;
+        line-height: 1rem;
+      }
+
+      .hero-brand {
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .hero-brand-logo {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 1rem;
+      }
+
+      .hero-brand-title {
+        font-size: 0.68rem;
+        line-height: 1rem;
+        letter-spacing: 0.16em;
+      }
+
+      .hero-brand-copy {
+        font-size: 0.82rem;
+        line-height: 1.25rem;
+      }
+
+      .hero-title {
+        margin-top: 1rem;
+        font-size: 2.35rem;
+        line-height: 1.02;
+      }
+
+      .hero-copy {
+        margin-top: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.55;
+      }
+
+      .hero-actions {
+        margin-top: 1.25rem;
+      }
+
+      .hero-button {
+        width: 100%;
+        padding: 0.9rem 1.25rem;
+      }
+
+      .hero-stats {
+        margin-top: 1.25rem;
+      }
+
+      .hero-stat-card {
+        padding: 1rem;
+      }
+
+      .support-outer {
+        border-radius: 1.4rem;
+        padding: 0.9rem;
+      }
+
+      .support-inner {
+        border-radius: 1.15rem;
+        padding: 1rem;
+      }
+
+      .support-header {
+        gap: 0.9rem;
+      }
+
+      .support-title-wrap {
+        max-width: none;
+      }
+
+      .support-title {
+        font-size: 1.55rem;
+        line-height: 1.18;
+      }
+
+      .support-icon {
+        height: 3.35rem;
+        width: 3.35rem;
+        min-width: 3.35rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .glass-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      .glass-card {
+        border-radius: 1.35rem;
+        padding: 1.2rem;
+      }
+
+      .pricing-card {
+        padding: 1.35rem;
+      }
+
+      .pricing-popular {
+        transform: none;
+      }
+
+      .pricing-badge {
+        left: 1rem;
+      }
+
+      .pricing-price {
+        font-size: 2.45rem;
+        line-height: 1;
+      }
+
+      .contact-shell {
+        border-radius: 1.45rem;
+        padding: 1.2rem;
+      }
+
+      .contact-qr-card {
+        border-radius: 1.4rem;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body class="bg-slate-100 text-slate-800 antialiased">
   <div class="min-h-screen bg-[linear-gradient(180deg,#eaf3ff_0%,#edf6ff_30%,#f8fbff_65%,#ffffff_100%)] bg-page-glow">
-    <header class="mx-auto max-w-6xl px-6 py-5">
-      <div class="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/22 shadow-glass backdrop-blur-2xl">
+    <header class="mx-auto max-w-6xl px-4 py-4 sm:px-6 sm:py-5">
+      <div class="top-banner relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/22 shadow-glass backdrop-blur-2xl">
         <div class="absolute inset-0">
           <img src="header-scenery.png" alt="Tokyo city view with Mount Fuji" class="h-full w-full object-cover" />
           <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(239,246,255,0.82)_0%,rgba(239,246,255,0.45)_45%,rgba(23,104,209,0.16)_100%)]"></div>
         </div>
-        <div class="relative flex items-center justify-between px-5 py-5 sm:px-6">
-          <div class="flex items-center">
-            <img src="brand-lockup.png" alt="Intrnational Student Support Japan brand logo" class="h-14 w-auto rounded-2xl border border-white/70 shadow-soft" />
-          </div>
+        <div class="top-banner-inner relative flex items-center justify-between px-5 py-5 sm:px-6">
+          <img src="brand-lockup.png" alt="Intrnational Student Support Japan brand logo" class="top-banner-logo h-14 w-auto rounded-2xl border border-white/70 shadow-soft" />
           <a href="https://lin.ee/9m0vqr3" class="hidden rounded-full border border-[#7ef0aa]/70 bg-[rgba(6,199,85,0.78)] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_18px_40px_-18px_rgba(6,199,85,0.75)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:bg-[rgba(6,199,85,0.88)] sm:inline-flex">Contact on LINE</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="mx-auto max-w-6xl px-6 pb-20 pt-8 sm:pb-24 sm:pt-14">
-        <div class="relative overflow-hidden rounded-[2.5rem] border border-white/40 shadow-glass">
+      <section class="mx-auto max-w-6xl px-4 pb-16 pt-4 sm:px-6 sm:pb-24 sm:pt-14">
+        <div class="hero-shell relative overflow-hidden rounded-[2.5rem] border border-white/40 shadow-glass">
           <div class="absolute inset-0">
             <img src="hero-students.png" alt="International students in Japan" class="h-full w-full object-cover" />
-            <div class="absolute inset-0 bg-[linear-gradient(110deg,rgba(11,37,76,0.86)_8%,rgba(18,70,137,0.74)_38%,rgba(255,255,255,0.18)_100%)]"></div>
+            <div class="absolute inset-0 bg-[linear-gradient(110deg,rgba(11,37,76,0.9)_8%,rgba(18,70,137,0.78)_38%,rgba(255,255,255,0.14)_100%)]"></div>
           </div>
 
-          <div class="relative grid min-h-[620px] items-center gap-10 px-6 py-10 sm:px-10 sm:py-14 lg:grid-cols-[1.15fr_0.85fr] lg:px-14">
+          <div class="hero-grid relative grid min-h-[620px] items-center gap-10 px-6 py-10 sm:px-10 sm:py-14 lg:grid-cols-[1.15fr_0.85fr] lg:px-14">
             <div>
-              <span class="inline-flex rounded-full border border-white/35 bg-white/14 px-4 py-1 text-sm font-medium text-white shadow-sm backdrop-blur-xl">Trusted support for daily life in Japan</span>
-              <div class="mt-6 flex items-center gap-4">
-                <div class="flex h-20 w-20 items-center justify-center overflow-hidden rounded-3xl border border-white/60 bg-white/22 p-2 shadow-glass backdrop-blur-2xl">
-                  <img src="brand-lockup.png" alt="Intrnational Student Support Japan brand logo" class="h-full w-full rounded-[1.1rem] object-cover" />
+              <span class="hero-chip inline-flex rounded-full border border-white/35 bg-white/14 px-4 py-1 text-sm font-medium text-white shadow-sm backdrop-blur-xl">Trusted support for daily life in Japan</span>
+              <div class="hero-brand mt-6 flex items-center gap-4">
+                <div class="hero-brand-logo flex h-20 w-20 items-center justify-center overflow-hidden rounded-3xl border border-white/60 bg-white/22 p-2 shadow-glass backdrop-blur-2xl">
+                  <img src="brand-lockup.png" alt="Intrnational Student Support Japan brand logo" class="h-full w-full rounded-[1rem] object-cover" />
                 </div>
                 <div>
-                  <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-100">Intrnational Student Support Japan</p>
-                  <p class="mt-1 text-sm text-sky-50/90">Friendly guidance for housing, jobs, translation, and daily life.</p>
+                  <p class="hero-brand-title text-sm font-semibold uppercase tracking-[0.2em] text-sky-100">Intrnational Student Support Japan</p>
+                  <p class="hero-brand-copy mt-1 text-sm text-sky-50/90">Friendly guidance for housing, jobs, translation, and daily life.</p>
                 </div>
               </div>
-              <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
+
+              <h1 class="hero-title mt-6 max-w-3xl text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl lg:text-6xl">
                 Intrnational Student Support Japan
               </h1>
-              <p class="mt-5 max-w-2xl text-lg leading-8 text-sky-50 sm:text-xl">
+              <p class="hero-copy mt-5 max-w-2xl text-lg leading-8 text-sky-50 sm:text-xl">
                 We help with jobs, housing, translation, and daily life in Japan.
               </p>
-              <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href="https://lin.ee/9m0vqr3" class="inline-flex items-center justify-center rounded-full border border-[#7ef0aa]/70 bg-[rgba(6,199,85,0.72)] px-7 py-3.5 text-base font-semibold text-white shadow-[0_18px_40px_-18px_rgba(6,199,85,0.75)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-[rgba(6,199,85,0.84)] hover:shadow-[0_24px_48px_-20px_rgba(6,199,85,0.85)]">Add us on LINE</a>
-                <a href="#services" class="inline-flex items-center justify-center rounded-full border border-white/45 bg-white/14 px-7 py-3.5 text-base font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.35),0_18px_40px_-22px_rgba(15,23,42,0.55)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/70 hover:bg-white/22 hover:text-white">See our services</a>
+
+              <div class="hero-actions mt-8 flex flex-col gap-4 sm:flex-row">
+                <a href="https://lin.ee/9m0vqr3" class="hero-button inline-flex items-center justify-center rounded-full border border-[#7ef0aa]/70 bg-[rgba(6,199,85,0.76)] px-7 py-3.5 text-base font-semibold text-white shadow-[0_18px_40px_-18px_rgba(6,199,85,0.75)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-[rgba(6,199,85,0.88)]">Add us on LINE</a>
+                <a href="#services" class="hero-button inline-flex items-center justify-center rounded-full border border-white/45 bg-white/14 px-7 py-3.5 text-base font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.35),0_18px_40px_-22px_rgba(15,23,42,0.55)] backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/70 hover:bg-white/22">See our services</a>
               </div>
-              <div class="mt-8 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
-                <div class="rounded-[1.75rem] border border-white/35 bg-white/18 p-5 shadow-glass backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/24">
+
+              <div class="hero-stats mt-8 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3">
+                <div class="hero-stat-card rounded-[1.75rem] border border-white/35 bg-white/18 p-5 shadow-glass backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/24">
                   <p class="text-2xl font-bold text-white">FREE</p>
                   <p class="mt-2 text-sm leading-6 text-white/90">First consultation</p>
                 </div>
-                <div class="rounded-[1.75rem] border border-white/35 bg-white/18 p-5 shadow-glass backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/24">
+                <div class="hero-stat-card rounded-[1.75rem] border border-white/35 bg-white/18 p-5 shadow-glass backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/24">
                   <p class="text-2xl font-bold text-white">Fast</p>
                   <p class="mt-2 text-sm leading-6 text-white/90">Friendly LINE support</p>
                 </div>
-                <div class="rounded-[1.75rem] border border-white/35 bg-white/18 p-5 shadow-glass backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/24">
+                <div class="hero-stat-card rounded-[1.75rem] border border-white/35 bg-white/18 p-5 shadow-glass backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/24">
                   <p class="text-2xl font-bold text-white">Simple</p>
                   <p class="mt-2 text-sm leading-6 text-white/90">Clear pricing and process</p>
                 </div>
@@ -101,14 +251,14 @@
 
             <div class="relative">
               <div class="absolute inset-0 -z-10 rounded-[2rem] bg-hero-glow blur-2xl"></div>
-              <div class="rounded-[2rem] border border-white/30 bg-white/12 p-6 shadow-glass backdrop-blur-2xl">
-                <div class="rounded-[1.5rem] border border-white/20 bg-[linear-gradient(135deg,rgba(23,104,209,0.72)_0%,rgba(97,183,255,0.42)_100%)] p-6 text-white backdrop-blur-2xl">
-                  <div class="grid grid-cols-[1fr_auto] items-start gap-10">
-                    <div class="max-w-[13rem] pr-2">
+              <div class="support-outer rounded-[2rem] border border-white/30 bg-white/12 p-6 shadow-glass backdrop-blur-2xl">
+                <div class="support-inner rounded-[1.5rem] border border-white/20 bg-[linear-gradient(135deg,rgba(23,104,209,0.72)_0%,rgba(97,183,255,0.42)_100%)] p-6 text-white backdrop-blur-2xl">
+                  <div class="support-header grid grid-cols-[1fr_auto] items-start gap-10">
+                    <div class="support-title-wrap max-w-[13rem]">
                       <p class="text-sm font-medium text-sky-100">Quick support</p>
-                      <h2 class="mt-2 text-2xl font-bold">We help you settle in Japan with confidence.</h2>
+                      <h2 class="support-title mt-2 text-2xl font-bold">We help you settle in Japan with confidence.</h2>
                     </div>
-                    <div class="mt-2 flex h-20 w-20 items-center justify-center rounded-3xl border border-white/20 bg-white/12 text-3xl">💬</div>
+                    <div class="support-icon mt-2 flex h-20 w-20 items-center justify-center rounded-3xl border border-white/20 bg-white/12 text-3xl">☁️</div>
                   </div>
                   <div class="mt-6 space-y-3">
                     <div class="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl">
@@ -128,37 +278,37 @@
         </div>
       </section>
 
-      <section id="services" class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+      <section id="services" class="glass-section mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div class="mx-auto max-w-2xl text-center">
           <p class="text-sm font-semibold uppercase tracking-[0.25em] text-skybrand-600">Services</p>
           <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Practical support for student life in Japan</h2>
           <p class="mt-4 text-base leading-7 text-slate-600">We focus on the problems international students face most often, with clear help and simple communication.</p>
         </div>
         <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          <article class="group rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
-            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700 transition group-hover:bg-skybrand-600/85 group-hover:text-white">🏠</div>
+          <article class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700">🏠</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Housing Support</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">Apartments, landlord contact, and translation support to help you find and secure housing smoothly.</p>
           </article>
-          <article class="group rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
-            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700 transition group-hover:bg-skybrand-600/85 group-hover:text-white">💼</div>
+          <article class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700">💼</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Job Support</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">Resume help, job search guidance, and application support so you can apply with confidence.</p>
           </article>
-          <article class="group rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
-            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700 transition group-hover:bg-skybrand-600/85 group-hover:text-white">🌐</div>
+          <article class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700">🌐</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Translation Help</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">Japanese ↔ English / Arabic translation for documents, conversations, and important daily tasks.</p>
           </article>
-          <article class="group rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
-            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700 transition group-hover:bg-skybrand-600/85 group-hover:text-white">📱</div>
+          <article class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-6 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/60 bg-white/55 text-2xl text-skybrand-700">📱</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Daily Life Support</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">Help with phone plans, city hall forms, and general questions about living in Japan.</p>
           </article>
         </div>
       </section>
 
-      <section id="pricing" class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+      <section id="pricing" class="glass-section mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div class="mx-auto max-w-3xl text-center">
           <p class="text-sm font-semibold uppercase tracking-[0.25em] text-skybrand-600">Pricing</p>
           <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Simple pricing that feels easy to start</h2>
@@ -166,9 +316,9 @@
         </div>
 
         <div class="mt-12 grid gap-6 lg:grid-cols-2 lg:items-stretch">
-          <article class="rounded-[2rem] border border-white/60 bg-white/35 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/48">
+          <article class="glass-card pricing-card rounded-[2rem] border border-white/60 bg-white/35 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/48">
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-skybrand-600">One-time help</p>
-            <p class="mt-5 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">¥990 - ¥2990</p>
+            <p class="pricing-price mt-5 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">¥990 - ¥2990</p>
             <p class="mt-3 text-sm font-medium text-skybrand-700">Affordable support for students</p>
             <p class="mt-2 text-sm font-semibold text-rose-500">Limited spots available</p>
             <p class="mt-6 text-sm leading-7 text-slate-600">Ideal for a single problem like translation, housing contact, document support, or help with one application.</p>
@@ -178,10 +328,10 @@
             <a href="https://lin.ee/9m0vqr3" class="mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#7ef0aa]/70 bg-[rgba(6,199,85,0.78)] px-6 py-3.5 text-base font-semibold text-white shadow-[0_18px_40px_-18px_rgba(6,199,85,0.75)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:bg-[rgba(6,199,85,0.88)]">Start Now on LINE</a>
           </article>
 
-          <article class="relative scale-[1.01] rounded-[2rem] border border-skybrand-300/70 bg-[linear-gradient(180deg,rgba(239,246,255,0.62)_0%,rgba(255,255,255,0.42)_100%)] p-8 shadow-[0_24px_55px_-25px_rgba(23,104,209,0.45)] backdrop-blur-2xl transition duration-300 hover:-translate-y-1 sm:p-10">
-            <div class="absolute -top-3 left-8 inline-flex rounded-full border border-white/40 bg-skybrand-600/90 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-soft backdrop-blur-xl">Most Popular</div>
+          <article class="glass-card pricing-card pricing-popular relative scale-[1.01] rounded-[2rem] border border-skybrand-300/70 bg-[linear-gradient(180deg,rgba(239,246,255,0.62)_0%,rgba(255,255,255,0.42)_100%)] p-8 shadow-[0_24px_55px_-25px_rgba(23,104,209,0.45)] backdrop-blur-2xl transition duration-300 hover:-translate-y-1 sm:p-10">
+            <div class="pricing-badge absolute -top-3 left-8 inline-flex rounded-full border border-white/40 bg-skybrand-600/90 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-soft backdrop-blur-xl">Most Popular</div>
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-skybrand-700">Monthly support</p>
-            <p class="mt-5 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">¥4980</p>
+            <p class="pricing-price mt-5 text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">¥4980</p>
             <p class="mt-3 text-sm font-medium text-skybrand-700">Affordable support for students</p>
             <p class="mt-2 text-sm font-semibold text-rose-500">Limited spots available</p>
             <p class="mt-6 text-sm leading-7 text-slate-600">Best for ongoing support with jobs, housing, translation, city hall questions, and daily life help throughout the month.</p>
@@ -193,23 +343,23 @@
         </div>
       </section>
 
-      <section id="how-it-works" class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+      <section id="how-it-works" class="glass-section mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div class="mx-auto max-w-2xl text-center">
           <p class="text-sm font-semibold uppercase tracking-[0.25em] text-skybrand-600">How It Works</p>
           <h2 class="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Get support in three simple steps</h2>
         </div>
         <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <div class="rounded-[2rem] border border-white/60 bg-white/34 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+          <div class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
             <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-skybrand-300/50 bg-skybrand-600/85 text-lg font-bold text-white backdrop-blur-xl">1</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Add us on LINE</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">Connect with us quickly using LINE and start the conversation anytime.</p>
           </div>
-          <div class="rounded-[2rem] border border-white/60 bg-white/34 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+          <div class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
             <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-skybrand-300/50 bg-skybrand-600/85 text-lg font-bold text-white backdrop-blur-xl">2</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Send your problem</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">Tell us what you need help with, whether it is housing, jobs, translation, or daily life.</p>
           </div>
-          <div class="rounded-[2rem] border border-white/60 bg-white/34 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
+          <div class="glass-card rounded-[2rem] border border-white/60 bg-white/34 p-8 shadow-glass backdrop-blur-2xl transition duration-300 hover:-translate-y-1 hover:bg-white/46">
             <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-skybrand-300/50 bg-skybrand-600/85 text-lg font-bold text-white backdrop-blur-xl">3</div>
             <h3 class="mt-5 text-xl font-semibold text-slate-900">Get help quickly</h3>
             <p class="mt-3 text-sm leading-7 text-slate-600">We respond with practical guidance and friendly support so you can move forward fast.</p>
@@ -217,8 +367,8 @@
         </div>
       </section>
 
-      <section id="contact" class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-        <div class="grid gap-8 rounded-[2rem] border border-white/60 bg-[linear-gradient(135deg,rgba(234,244,255,0.58)_0%,rgba(255,255,255,0.38)_55%,rgba(246,251,255,0.55)_100%)] p-8 shadow-glass backdrop-blur-2xl lg:grid-cols-[1fr_0.85fr] lg:p-12">
+      <section id="contact" class="glass-section mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <div class="contact-shell grid gap-8 rounded-[2rem] border border-white/60 bg-[linear-gradient(135deg,rgba(234,244,255,0.58)_0%,rgba(255,255,255,0.38)_55%,rgba(246,251,255,0.55)_100%)] p-8 shadow-glass backdrop-blur-2xl lg:grid-cols-[1fr_0.85fr] lg:p-12">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.25em] text-skybrand-600">Contact</p>
             <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Ready to get support?</h2>
@@ -229,13 +379,9 @@
             </div>
           </div>
           <div class="flex items-center justify-center">
-            <div class="w-full max-w-sm rounded-[2rem] border border-white/70 bg-white/38 p-6 text-center shadow-glass backdrop-blur-2xl">
+            <div class="contact-qr-card w-full max-w-sm rounded-[2rem] border border-white/70 bg-white/38 p-6 text-center shadow-glass backdrop-blur-2xl">
               <div class="overflow-hidden rounded-[1.5rem] border border-white/70 bg-white/45">
-                <img
-                  src="poster_en_3_9-1.png"
-                  alt="LINE official account poster with QR code"
-                  class="h-auto w-full object-cover"
-                />
+                <img src="poster_en_3_9-1.png" alt="LINE official account poster with QR code" class="h-auto w-full object-cover" />
               </div>
               <p class="mt-5 text-sm leading-6 text-slate-600">Scan this LINE code to contact us directly and get support quickly.</p>
             </div>
